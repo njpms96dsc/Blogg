@@ -4,66 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alpha Screener India</title>
-    <!-- This line makes the page look modern and high-end instantly -->
+    <!-- Modern high-end styling framework -->
     <script src="https://tailwindcss.com"></script>
 </head>
 <body class="bg-slate-900 text-slate-100 font-sans min-h-screen">
 
-    <!-- Header Navigation -->
+    <!-- 1. LIVE MARKET HEADER -->
     <header class="border-b border-slate-800 bg-slate-950 p-4 sticky top-0 z-50">
-        <div class="max-w-4xl mx-auto flex justify-between items-center">
-            <h1 class="text-xl font-bold tracking-wider text-emerald-400 font-mono">📈 ALPHA_SCREENER</h1>
-            <span class="bg-emerald-500/10 text-emerald-400 text-xs px-2.5 py-1 rounded-full font-medium border border-emerald-500/20">NSE India</span>
+        <div class="max-w-4xl mx-auto flex justify-between items-center text-xs">
+            <div class="flex items-center space-x-2">
+                <h1 class="text-base font-bold tracking-wider text-emerald-400 font-mono">📈 ALPHA_SCREENER</h1>
+                <span class="bg-emerald-500/10 text-emerald-400 px-2 py-0.5 rounded border border-emerald-500/20 font-mono font-semibold">DATA-ONLY</span>
+            </div>
+            <div class="text-right font-mono text-slate-400">
+                <span class="text-emerald-400">●</span> MARKET DATE: <span class="text-white font-bold">OCT 24, 2026</span>
+            </div>
         </div>
     </header>
 
-    <!-- Main Content Container -->
-    <main class="max-w-4xl mx-auto p-4 space-y-6">
+    <!-- 2. CANVA HERO BANNERS (High Visual Density) -->
+    <section class="max-w-4xl mx-auto px-4 mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="rounded-xl overflow-hidden border border-slate-800 shadow-lg hover:border-emerald-500/30 transition-colors">
+            <img src="banner1.png" alt="Alpha Screener India Brand Billboard" class="w-full h-auto object-cover">
+        </div>
+        <div class="rounded-xl overflow-hidden border border-slate-800 shadow-lg hover:border-emerald-500/30 transition-colors">
+            <img src="banner2.png" alt="Educational Safety Shield" class="w-full h-auto object-cover">
+        </div>
+    </section>
 
-        <!-- Top Welcome Banner -->
-        <section class="bg-gradient-to-r from-slate-800 to-slate-950 border border-slate-800 rounded-2xl p-6 text-center shadow-xl">
-            <h2 class="text-2xl font-bold text-white mb-2">Daily Data-Driven Market Insights</h2>
-            <p class="text-slate-400 text-sm max-w-xl mx-auto">Skip the noise. Get high-volume breakouts, microcap screeners, and bulk deal breakdowns posted every trading day at 9:00 PM IST.</p>
-        </section>
-
-        <!-- Main Blog Post Card -->
-        <article class="bg-slate-950 border border-slate-800 rounded-2xl p-6 shadow-md">
-            <div class="flex justify-between items-center mb-4">
-                <span class="text-xs font-semibold text-emerald-400 tracking-wider uppercase font-mono">Microcap Analysis</span>
-                <time class="text-xs text-slate-500">October 24, 2026</time>
-            </div>
+    <!-- 3. THE 3-BUTTON RETAIL SCANNER DATA ROOMS -->
+    <main class="max-w-4xl mx-auto p-4 mt-2">
+        <h2 class="text-xs font-mono tracking-widest text-slate-500 uppercase mb-4 px-1">📊 Select Automated Data Room</h2>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
             
-            <h3 class="text-xl font-bold text-white mb-3 hover:text-emerald-400 transition-colors">🔥 Volume Busters NSE Microcaps</h3>
-            <p class="text-slate-300 text-sm leading-relaxed mb-6">
-                Here are today's top screened symbols displaying heavy institutional buying and unusual volume spikes. These microcaps are breaking out of structural bases on high weekly volumes.
-            </p>
+            <!-- BUTTON 1: BULK DEALS (The Whale Watcher) -->
+            <a href="bulk.html" class="block bg-gradient-to-br from-slate-950 to-slate-900 border border-slate-800 hover:border-emerald-500 rounded-2xl overflow-hidden transition-all group shadow-md">
+                <!-- Displays top of your raw Pydroid data terminal screenshot cleanly -->
+                <img src="bulk.png" alt="Pydroid Bulk Deals Terminal" class="w-full h-40 object-cover object-top border-b border-slate-800 group-hover:opacity-90 transition-opacity">
+                <div class="p-4">
+                    <span class="text-[10px] font-mono font-semibold bg-emerald-500/10 text-emerald-400 px-2 py-0.5 rounded uppercase">Institutional</span>
+                    <h3 class="text-base font-bold text-white mt-2 group-hover:text-emerald-400 transition-colors">🐋 Whale Watcher</h3>
+                    <p class="text-slate-400 text-xs mt-1 leading-relaxed">Track where legendary funds and HNIs deployed massive cash capital today.</p>
+                </div>
+            </a>
 
-            <!-- Table for Screened Symbols -->
-            <div class="overflow-x-auto rounded-xl border border-slate-800">
-                <table class="w-full text-left border-collapse text-sm">
-                    <thead>
-                        <tr class="bg-slate-900 border-b border-slate-800 text-slate-400">
-                            <th class="p-3 font-semibold">Symbol</th>
-                            <th class="p-3 font-semibold">Price Change</th>
-                            <th class="p-3 font-semibold">Volume Spike</th>
-                        </tr>
-                    </thead>
-                    <tbody class="divide-y divide-slate-800/50">
-                        <tr class="hover:bg-slate-900/50 transition-colors">
-                            <td class="p-3 font-mono font-bold text-white">XYZ-MICRO.NS</td>
-                            <td class="p-3 text-emerald-400 font-medium">+14.2%</td>
-                            <td class="p-3 text-slate-300">5.2x Avg Vol</td>
-                        </tr>
-                        <tr class="hover:bg-slate-900/50 transition-colors">
-                            <td class="p-3 font-mono font-bold text-white">ABC-IND.NS</td>
-                            <td class="p-3 text-emerald-400 font-medium">+9.8%</td>
-                            <td class="p-3 text-slate-300">3.8x Avg Vol</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </article>
+            <!-- BUTTON 2: VOLUME BUSTERS -->
+            <a href="vol.html" class="block bg-gradient-to-br from-slate-950 to-slate-900 border border-slate-800 hover:border-amber-500 rounded-2xl overflow-hidden transition-all group shadow-md">
+                <!-- Displays top of your raw Pydroid volume breakout screenshot cleanly -->
+                <img src="vol.png" alt="Pydroid Volume Terminal" class="w-full h-40 object-cover object-top border-b border-slate-800 group-hover:opacity-90 transition-opacity">
+                <div class="p-4">
+                    <span class="text-[10px] font-mono font-semibold bg-amber-500/10 text-amber-400 px-2 py-0.5 rounded uppercase">Heavy Accumulation</span>
+                    <h3 class="text-base font-bold text-white mt-2 group-hover:text-amber-400 transition-colors">🔥 Volume Busters</h3>
+                    <p class="text-slate-400 text-xs mt-1 leading-relaxed">Spotting microcaps experiencing unusual 3x to 10x average weekly volume spikes.</p>
+                </div>
+            </a>
 
+            <!-- BUTTON 3: REVERSAL ZONES (Oversold/Value) -->
+            <a href="value.html" class="block bg-gradient-to-br from-slate-950 to-slate-900 border border-slate-800 hover:border-blue-500 rounded-2xl overflow-hidden transition-all group shadow-md">
+                <!-- Displays top of your raw Pydroid RSI oversold screenshot cleanly -->
+                <img src="value.png" alt="Pydroid RSI Terminal" class="w-full h-40 object-cover object-top border-b border-slate-800 group-hover:opacity-90 transition-opacity">
+                <div class="p-4">
+                    <span class="text-[10px] font-mono font-semibold bg-blue-500/10 text-blue-400 px-2 py-0.5 rounded uppercase">Low Risk Structures</span>
+                    <h3 class="text-base font-bold text-white mt-2 group-hover:text-blue-400 transition-colors">🛡️ Deep Value Zones</h3>
+                    <p class="text-slate-400 text-xs mt-1 leading-relaxed">Mathematically oversold stock charts resting tightly on key historical demand supports.</p>
+                </div>
+            </a>
+
+        </div>
     </main>
+
+    <!-- 4. SEBI COMPLIANT DISCLAIMER -->
+    <footer class="max-w-4xl mx-auto p-4 mt-12 border-t border-slate-900 text-center">
+        <p class="text-[10px] text-slate-500 leading-relaxed max-w-2xl mx-auto font-mono">
+            <strong>Regulatory Disclaimer:</strong> Alpha Screener India is an automated, purely mathematical data analytics portal. We are NOT SEBI-registered investment advisors or research analysts. No content, chart, or screened symbol on this platform constitutes financial advice, tips, buy/sell recommendations, or market forecasting. All data points are strictly for educational research purposes.
+        </p>
+    </footer>
+
 </body>
 </html>
